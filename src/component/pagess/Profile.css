@@ -1,0 +1,288 @@
+/* Profile profilecards ==================================*/
+
+.role-container {
+  margin: 30px auto;
+  /* background: #231e39; */
+  color: #b3b8cd;
+  border-radius: 5px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .75);
+}
+
+.cover-photo {
+  background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  height: 160px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.profile {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 93px 0 0 -175px;
+  border: 1px solid #1f1a32;
+  padding: 7px;
+  background: #292343;
+}
+
+.profile-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 27px 0 0 120px;
+}
+
+.about {
+  text-align: left;
+  padding-left: 50px;
+}
+
+button {
+  margin: 10px 0 40px 0;
+}
+
+.msg-btn,
+.follow-btn {
+  background: #03bfbc;
+  border: none;
+  /* border: 1px solid #03bfbc; */
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 3px;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.follow-btn {
+  margin-left: 10px;
+  background: transparent;
+  color: #000;
+  border: 1px solid #BC9F8B;
+  border-radius: 20px;
+
+}
+
+.follow-btn:hover {
+  color: #231e39;
+  background: #BC9F8B;
+  ;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+.role-container i {
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.role-container i:hover {
+  color: #03bfbc;
+}
+
+.profile-email {
+  font-size: 14px !important;
+  padding-right: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===================================== */
+/* img {
+    max-width: 100%;
+    display: block;
+  } */
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.profilecards::after,
+.profilecards img {
+  border-radius: 50%;
+}
+
+.profilecards,
+.stats {
+  display: flex;
+}
+
+.profilecards {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .5);
+  max-width: 600px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+  margin: 1rem;
+  position: relative;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.profilecards::before,
+.profilecards::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.profilecards::before {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  top: -.7rem;
+  left: -.7rem;
+}
+
+.profilecards::after {
+  height: 15rem;
+  width: 15rem;
+  background-color: #CADABF;
+  top: -8rem;
+  right: -8rem;
+  box-shadow: 2rem 6rem 0 -3rem #FFF
+}
+
+.profilecards img {
+  width: 15rem;
+  min-width: 80px;
+  box-shadow: 0 0 0 5px #FFF;
+}
+
+.infos {
+  margin-left: 1.5rem;
+}
+
+.name {
+  margin-bottom: 1rem;
+}
+
+.name h2 {
+  font-size: 1.3rem;
+}
+
+.name h4 {
+  font-size: .8rem;
+  color: #333
+}
+
+.text {
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+
+
+.stats li {
+  min-width: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profilecards-content li h3 {
+  font-size: .99rem;
+}
+
+.profilecards-content li h4 {
+  font-size: .99rem;
+}
+
+.links{
+  margin-left: -10px;
+  height: 65px;
+  /* background-color: #000 !important; */
+  
+}
+.links button {
+  font-family: 'Poppins', sans-serif;
+  min-width: 120px;
+  padding: .5rem;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .25s linear;
+}
+
+.links .follow,
+.links .view:hover {
+  background-color: #222;
+  color: #FFF;
+}
+
+.links .view,
+.links {
+  background-color: transparent;
+  color: #222;
+}
+
+.follow {
+  border: none !important;
+  height: 45px;
+  font-size: 18px !important;
+  border-radius: 20px !important;
+}
+
+.follow:hover {
+  background-color: transparent !important;
+  border: 2px solid #BC9F8B !important;
+  color: #BC9F8B !important;
+  border-radius: 10px !important;
+}
+
+.view {
+  border: 2px solid #BC9F8B !important;
+  color: #BC9F8B !important;
+  border-radius: 20px !important;
+
+}
+
+.view:hover {
+  border: none !important;
+  background-color: gray !important;
+  color: black !important;
+  height: 45px;
+  border-radius: 10px !important;
+
+}
+
+@media screen and (max-width: 450px) {
+  .profilecards {
+    display: block;
+  }
+
+  .infos {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+
+  .links button {
+    min-width: 100px;
+  }
+}
+
+.profilecard-icon {
+  color: #BC9F8B;
+}
+
+.profilecards-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profilecard-icon path {
+  fill: #BC9F8B;
+}
